@@ -1,6 +1,8 @@
 #ifndef __PILA_H__
 #define __PILA_H__
 
+#include <stddef.h>
+
 typedef struct NodoPila {
     void *dato;
     struct NodoPila* siguiente;
@@ -13,8 +15,8 @@ typedef struct {
 Pila* crearPila();
 
 void push(Pila* p, void *dato, size_t size);
-char pop(Pila* p);
-char peek(Pila* p);
+void* pop(Pila* p);
+void* peek(Pila* p);
 
 int pilaVacia(Pila* p);
 

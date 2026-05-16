@@ -1,6 +1,8 @@
 #ifndef __COLA_H__
 #define __COLA_H__
 
+#include <stddef.h>
+
 typedef struct NodoCola {
     void *dato;
     struct NodoCola* siguiente;

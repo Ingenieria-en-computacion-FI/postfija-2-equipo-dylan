@@ -22,8 +22,7 @@ int main() {
     printf("Expresion infija:\n");
     printf("%s\n\n", expresion);
 
-    Cola* postfija =
-        infijaAPostfija(expresion);
+    Cola* postfija = infijaAPostfija(expresion);
 
     printf("Expresion postfija:\n");
 
